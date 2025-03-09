@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CultureForge: Forge Your Culture. Forge Your Future.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Base styles */
+        :root {
+            --primary: #673AB7; /* Purple accent */
+            --primary-light: rgba(103, 58, 183, 0.1);
+            --primary-medium: rgba(103, 58, 183, 0.5);
+            --text-dark: #141115; 
+            --text-light: #f9f9f9;
+            --background-light: #f9f9f9;
+            --background-white: #ffffff;
+            --accent-light: #84dccf; /* Tiffany Blue accent */
+            --background-dark: rgba(29, 40, 55, 0.9);
+            --transition-standard: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            font-size: 18px;
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Lato', sans-serif;
+            color: var(--text-dark);
+            background: var(--background-white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+            line-height: 1.2;
+            color: var(--text-dark);
+        }
+        
+        p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+        
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: var(--transition-standard);
+        }
+        
+        a:hover {
+            color: var(--accent-light);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: var(--background-white);
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            border: none;
+            font-family: 'Space Grotesk', sans-serif;
+            font-weight: 500;
+            cursor: pointer;
+            transition: var(--transition-standard);
+            text-align: center;
+        }
+        
+        .btn:hover {
+            background-color: var(--primary-medium);
+            color: var(--background-white);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(103, 58, 183, 0.3);
+        }
+        
+        .section {
+            padding: 6rem 0;
+            position: relative;
+        }
+        
+        .section-alt {
+            background-color: var(--background-light);
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+            font-size: 2.5rem;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            bottom: -0.8rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 5rem;
+            height: 3px;
+            background-color: var(--primary);
+            border-radius: 1px;
+        }
+        
+        /* Modified Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background-color: var(--background-white);
+        }
+        
+        .hero-backdrop {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0.05;
+            filter: blur(2px);
+        }
+        
+        .network-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            opacity: 0.2;
+        }
+        
+        .network-line {
+            position: absolute;
+            background-color: var(--primary-light);
+            transform-origin: center;
+            animation: pulse 8s infinite;
+        }
+        
+        .city-node {
+            position: absolute;
+            border-radius: 50%;
+            background: radial-gradient(circle at center, var(--primary), transparent);
+            animation: glow 4s infinite alternate;
+            z-index: 2;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .hero-text {
+            flex: 1;
+            padding-right: 2rem;
+        }
+        
+        .hero-title {
+            font-size: 3.5rem;
+            margin-bottom: 3rem;
+            color: var(--text-dark);
+            position: relative;
+        }
+        
+        .hero-title:after {
+            content: '';
+            position: absolute;
+            width: 60%;
+            height: 3px;
+            background: var(--primary);
+            bottom: -10px;
+            left: 0;
+        }
+        
+        .hero-point {
+            margin-bottom: 2rem;
+        }
+        
+        .hero-point h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-dark);
+        }
+        
+        .hero-point p {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        .hero-image {
+            flex: 1;
+            text-align: center;
+            position: relative;
+            height: 600px;
+        }
+        
+        .city-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        
+        .city-image.active {
+            opacity: 1;
+        }
+        
+        .scroll-indicator {
+            position: absolute;
+            bottom: 3rem;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1rem;
+            color: var(--text-dark);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            animation: bounce 10s infinite;
+        }
+        
+        .scroll-indicator i {
+            font-size: 1.5rem;
+            margin-top: 0.5rem;
+            color: var(--primary);
+        }
+        
+        /* Vision Points Section - New Style */
+		.vision-container {
+			width: 100%;
+			max-width: 1200px;
+			padding: 0;
+			overflow: hidden;
+		}
+
+		.vision-image-container {
+			position: relative;
+			width: 100%;
+			height: auto;
+			aspect-ratio: 16/9;
+		}
+
+		.vision-background-image {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center;
+		}
+
+		.vision-text-top-left {
+			position: absolute;
+			top: 40px;
+			left: 20px;
+			max-width: 550px;
+			z-index: 2;
+			background-color: rgba(255, 255, 255, 0.3);
+			padding: 20px 25px;
+			border-left: 4px solid var(--primary);
+			border-radius: 0 4px 4px 0;
+		}
+
+		.vision-text-bottom-right {
+			position: absolute;
+			top: 160px;
+			right: 20px;
+			max-width: 550px;
+			z-index: 2;
+			background-color: rgba(255, 255, 255, 0.3);
+			padding: 20px 25px;
+			border-right: 4px solid var(--primary);
+			border-radius: 4px 0 0 4px;
+			text-align: right;
+		}
+
+		.vision-title {
+			font-size: 1.5rem;
+			margin-bottom: 0.5rem;
+			color: var(--text-dark);
+			font-weight: bold;
+		}
+
+		.vision-description {
+			font-style: italic;
+			margin-bottom: 0;
+			line-height: 1.6;
+		}
+
+		/* Responsive styles for the vision section */
+		@media (max-width: 992px) {
+			.vision-text-top-left,
+			.vision-text-bottom-right {
+				max-width: 500px;
+				background-color: rgba(255, 255, 255, 0.5);
+			}
+			.vision-text-bottom-right {
+				top: 210px;
+			}
+		}
+
+		@media (max-width: 768px) {
+			.vision-text-top-left,
+			.vision-text-bottom-right {
+				max-width: 400px;
+				padding: 15px 20px;
+			}
+			
+			.vision-title {
+				font-size: 1.3rem;
+			}
+			
+			.vision-text-top-left {
+				top: 20px;
+				left: 20px;
+			}
+			
+			.vision-text-bottom-right {
+				bottom: 20px;
+				right: 20px;
+			}
+		}
+
+		@media (max-width: 576px) {
+			.vision-text-top-left,
+			.vision-text-bottom-right {
+				position: relative;
+				top: auto;
+				left: auto;
+				right: auto;
+				bottom: auto;
+				max-width: 100%;
+				margin: 0;
+				border: none;
+				border-left: 4px solid var(--primary);
+				border-radius: 0 4px 4px 0;
+				text-align: left;
+			}
+			
+			.vision-image-container {
+				display: flex;
+				flex-direction: column;
+			}
+			
+			.vision-text-top-left {
+				order: 2;
+				margin-top: -20px;
+				background-color: var(--background-white);
+			}
+			
+			.vision-text-bottom-right {
+				order: 3;
+				margin-top: 10px;
+				background-color: var(--background-white);
+			}
+			
+			.vision-background-image {
+				order: 1;
+			}
+		}
+        
+        /* Altogether Section */
+        .altogether-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 3rem;
+        }
+        
+        .altogether-point {
+            padding: 2.5rem;
+            border-radius: 8px;
+            background-color: var(--background-white);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            opacity: 0;
+            transform: translateY(40px);
+            transition: var(--transition-standard);
+        }
+        
+        .altogether-point.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .altogether-illustration {
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .altogether-illustration img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 4px;
+        }
+        
+        .altogether-title {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+        }
+        
+        .altogether-title:after {
+            content: '';
+            position: absolute;
+            width: 40px;
+            height: 3px;
+            background: var(--primary);
+            bottom: -0.5rem;
+            left: 0;
+        }
+        
+        .altogether-description {
+            font-style: italic;
+        }
+        
+        /* Infrastructure Section */
+        .infra-section {
+            text-align: center;
+            padding: 6rem 0;
+        }
+        
+        .infra-title {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .infra-description {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+        }
+        
+        .infra-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+		
+		.generic-highlight {
+			font-weight: 600;
+		}
+		
+		.cultureforge-font {
+			font-family: 'Space Grotesk', sans-serif;
+		}
+        
+        .cultureforge-highlight {
+            color: var(--primary);
+            font-weight: 700;
+        }
+		
+		.cultureforge-highlight-black {
+            color: var(--text-dark);
+            font-weight: 700;
+        }
+		
+		/* Related Projects Section Styles */
+		.related-projects {
+		  padding: 80px 0;
+		}
+
+		.related-projects .container {
+		  max-width: 1200px;
+		  margin: 0 auto;
+		  padding: 0 20px;
+		}
+
+		.related-projects h2 {
+		  font-size: 2.5rem;
+		  margin-bottom: 40px;
+		  color: #333;
+		  text-align: center;
+		}
+
+		.projects-list {
+		  list-style-type: none;
+		  padding: 0;
+		  margin: 0;
+		}
+
+		.projects-list li {
+		  font-size: 18px;
+		  line-height: 1.6;
+		  padding: 16px 0;
+		  border-bottom: 1px solid #eaeaea;
+		}
+
+		.projects-list li:last-child {
+		  border-bottom: none;
+		}
+
+		.project-name {
+		  font-weight: 600;
+		  color: #333;
+		}
+
+		.project-link {
+		  font-weight: 600;
+		  color: var(--primary);
+		  text-decoration: none;
+		  transition: color 0.3s ease;
+		}
+
+		.project-link:hover {
+		  color: #2842b1;
+		  text-decoration: underline;
+		}
+
+		@media (max-width: 768px) {
+		  .related-projects {
+			padding: 60px 0;
+		  }
+		  
+		  .related-projects h2 {
+			font-size: 28px;
+			margin-bottom: 30px;
+		  }
+		  
+		  .projects-list li {
+			font-size: 16px;
+			padding: 12px 0;
+		  }
+		}
+		
+		/* Call to Action Section */
+		.cta-section {
+			padding: 6rem 0;
+			background-color: var(--background-light);
+			position: relative;
+		}
+
+		.cta-section .container {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: 3rem;
+			max-width: 1200px;
+		}
+
+		.cta-links {
+			grid-column: 1 / -1;
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 3rem;
+		}
+
+		.cta-link {
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 500;
+			color: var(--primary);
+			transition: var(--transition-standard);
+			display: inline-flex;
+			align-items: center;
+		}
+
+		.cta-link:hover {
+			color: var(--accent-light);
+			transform: translateY(-2px);
+		}
+
+		.social-media, .newsletter, .contact {
+			padding: 2.5rem;
+			border-radius: 8px;
+			background-color: var(--background-white);
+			box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+			transition: var(--transition-standard);
+		}
+
+		.social-media:hover, .newsletter:hover, .contact:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+		}
+
+		.social-media h3, .newsletter h3, .contact h3 {
+			font-size: 1.5rem;
+			margin-bottom: 1.2rem;
+			position: relative;
+		}
+
+		.social-media h3:after, .newsletter h3:after, .contact h3:after {
+			content: '';
+			position: absolute;
+			width: 40px;
+			height: 3px;
+			background: var(--primary);
+			bottom: -0.5rem;
+			left: 0;
+		}
+
+		.social-icons {
+			display: flex;
+			gap: 1rem;
+			margin-top: 1.5rem;
+		}
+
+		.social-icon {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			background-color: var(--primary-light);
+			color: var(--primary);
+			font-size: 1.2rem;
+			transition: var(--transition-standard);
+		}
+
+		.social-icon:hover {
+			background-color: var(--primary);
+			color: var(--background-white);
+			transform: translateY(-3px);
+		}
+
+		.newsletter-form {
+			display: flex;
+			margin-top: 1.5rem;
+		}
+
+		.newsletter-form input {
+			flex: 1;
+			padding: 0.8rem 1rem;
+			border: 1px solid rgba(0, 0, 0, 0.1);
+			border-radius: 4px 0 0 4px;
+			font-family: 'Lato', sans-serif;
+		}
+
+		.newsletter-form button {
+			padding: 0.8rem 1.5rem;
+			background-color: var(--primary);
+			color: var(--background-white);
+			border: none;
+			border-radius: 0 4px 4px 0;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 500;
+			cursor: pointer;
+			transition: var(--transition-standard);
+		}
+
+		.newsletter-form button:hover {
+			background-color: var(--primary-medium);
+		}
+
+		.contact-button {
+			display: inline-block;
+			background-color: var(--primary);
+			color: var(--background-white);
+			padding: 0.8rem 1.5rem;
+			border-radius: 4px;
+			margin-top: 1.5rem;
+			font-family: 'Space Grotesk', sans-serif;
+			font-weight: 500;
+			transition: var(--transition-standard);
+		}
+
+		.contact-button:hover {
+			background-color: var(--primary-medium);
+			color: var(--background-white);
+			transform: translateY(-2px);
+			box-shadow: 0 5px 15px rgba(103, 58, 183, 0.3);
+		}
+
+		/* Responsive Styles for CTA Section */
+		@media (max-width: 992px) {
+			.cta-section .container {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		@media (max-width: 768px) {
+			.cta-links {
+				flex-direction: column;
+				gap: 1rem;
+				align-items: center;
+			}
+			
+			.newsletter-form {
+				flex-direction: column;
+			}
+			
+			.newsletter-form input {
+				border-radius: 4px;
+				margin-bottom: 1rem;
+			}
+			
+			.newsletter-form button {
+				border-radius: 4px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			.social-media, .newsletter, .contact {
+				padding: 1.5rem;
+			}
+		}
+        
+        /* Footer */
+        .footer {
+            background-color: var(--background-dark);
+            color: var(--text-light);
+            padding: 3rem 0;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .footer-links a {
+            color: var(--text-light);
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent-light);
+        }
+        
+        .copyright {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+        
+        /* Animations */
+        @keyframes pulse {
+            0% { opacity: 0.05; }
+            50% { opacity: 0.2; }
+            100% { opacity: 0.05; }
+        }
+        
+        @keyframes glow {
+            0% { 
+                box-shadow: 0 0 5px var(--primary), 0 0 10px var(--primary);
+                opacity: 0.5;
+            }
+            100% { 
+                box-shadow: 0 0 20px var(--primary), 0 0 30px var(--primary);
+                opacity: 0.8;
+            }
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0) translateX(-50%);}
+            40% {transform: translateY(-20px) translateX(-50%);}
+            60% {transform: translateY(-10px) translateX(-50%);}
+        }
+        
+        /* Floating Elements */
+        .floating-particle {
+            position: absolute;
+            border-radius: 50%;
+            background: var(--primary-light);
+            pointer-events: none;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 992px) {
+            .hero-content {
+                flex-direction: column;
+            }
+            
+            .hero-text {
+                padding-right: 0;
+                margin-bottom: 3rem;
+                text-align: center;
+            }
+            
+            .hero-title:after {
+                left: 20%;
+                width: 60%;
+            }
+            
+            .hero-image {
+                width: 100%;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            html {
+                font-size: 16px;
+            }
+            
+            .hero-title {
+                font-size: 3rem;
+            }
+            
+            .section {
+                padding: 4rem 0;
+            }
+            
+            .vision-grid, .altogether-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                max-width: 300px;
+                margin: 0 auto;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 2.5rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .infrastructure-title {
+                font-size: 1.8rem;
+            }
+            
+            .cta-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-backdrop"></div>
+        <div class="network-container" id="networkContainer"></div>
+        
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">Vision</h1>
+                
+                <div class="hero-point">
+                    <h2>New city-states, where people live under self-chosen rules.</h2>
+                    <p>Communities governing themselves, defining customs and laws that reflect their unique identity.</p>
+                </div>
+                
+                <div class="hero-point">
+                    <h2>Different people, with different lifestyles, cultures and laws.</h2>
+                    <p>Each community thrives with its own traditions, practices, and legal frameworks.</p>
+                </div>
+                
+                <div class="hero-point">
+                    <h2>Reverse diaspora: self-governing communities, instead of one-size-fits-all states.</h2>
+                    <p>Rather than a single, uniform state, people form tailored communities based on shared values and visions.
+					</p>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <img src="src/img/iso_1.png" alt="Isometric city block 1" class="city-image active" id="cityImage1">
+                <img src="src/img/iso_2.png" alt="Isometric city block 2" class="city-image" id="cityImage2">
+                <img src="src/img/iso_3.png" alt="Isometric city block 3" class="city-image" id="cityImage3">
+                <img src="src/img/iso_4.png" alt="Isometric city block 4" class="city-image" id="cityImage4">
+                <img src="src/img/iso_5.png" alt="Isometric city block 5" class="city-image" id="cityImage5">
+                <img src="src/img/iso_6.png" alt="Isometric city block 6" class="city-image" id="cityImage6">
+                <img src="src/img/iso_7.png" alt="Isometric city block 7" class="city-image" id="cityImage7">
+                <img src="src/img/iso_8.png" alt="Isometric city block 8" class="city-image" id="cityImage8">
+                <img src="src/img/iso_9.png" alt="Isometric city block 9" class="city-image" id="cityImage9">
+                <img src="src/img/iso_10.png" alt="Isometric city block 10" class="city-image" id="cityImage10">
+                <img src="src/img/iso_11.png" alt="Isometric city block 11" class="city-image" id="cityImage11">
+                <img src="src/img/iso_12.png" alt="Isometric city block 12" class="city-image" id="cityImage12">
+                <img src="src/img/iso_13.png" alt="Isometric city block 13" class="city-image" id="cityImage13">
+				<img src="src/img/iso_14.png" alt="Isometric city block 14" class="city-image" id="cityImage14">
+            </div>
+        </div>
+        
+        <div class="scroll-indicator" id="scrollIndicator">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+	<!-- Vision Points Section -->
+	<section class="section" id="vision">
+		<div class="container">
+			<div class="vision-image-container">
+				<img src="src/img/cities_skylines.png" alt="Vision of flourishing communities" class="vision-background-image">
+				
+				<div class="vision-text-top-left">
+					<h3 class="vision-title">A network of city-states, based on common values and mutual benefit.</h3>
+					<!-- <p class="vision-description">These independent communities connect through shared principles and cooperative exchanges.</p> -->
+				</div>
+				
+				<div class="vision-text-bottom-right">
+					<h3 class="vision-title">People living meaningful lives, mentally healthy and empowered with true agency.</h3>
+					<!-- <p class="vision-description">Individuals thrive in an environment that fosters self-determination, creativity, and overall well-being.</p> -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+    <!-- Infrastructure Section -->
+    <section class="section section-alt infra-section" id="infra">
+        <div class="container">
+            <h2 class="infra-title">Foundational Infrastructure Pieces</h2>
+            <p class="infra-description">This vision requires multiple foundational infrastructure pieces. </br>One of those being <span class="cultureforge-highlight">culture creation</span> and <span class="cultureforge-highlight">-management</span>, such that each city-state can <span class="cultureforge-highlight">construct</span> and <span class="cultureforge-highlight">sustain its own new culture</span> on a state level. 
+			</br></br>This infrastructure piece is <span class="cultureforge-font cultureforge-highlight-black">Culture</span><span class="cultureforge-font  cultureforge-highlight">Forge</span>.</p>
+
+        </div>
+    </section>
+
+	<!-- Related Projects Section -->
+	<section class="related-projects">
+	  <div class="container">
+		<h2>Related Projects</h2>
+		<ul class="projects-list">
+		  <li>
+			<span class="project-name"><a href="https://thenetworkstate.com/" class="project-link">The Network State: How To Start a New Country</a></span> - Foundational theory for a new kind of state, <span class="project-name">by Balaji Srinivasan</span>.
+		  </li>
+		  <li>
+			<span class="project-name"><a href="https://ethereum.foundation/" class="project-link">The Ethereum Foundation</a></span> - A new kind of money, a new foundation for human coordination.
+		  </li>
+		  <li>
+			<span class="project-name"><a href="https://dontdie.com/" class="project-link">Don't Die</a></span> - A longevity movement, an emerging network state, <span class="project-name">by Bryan Johnson / Blueprint</span>.
+		  </li>
+		  <li>
+			<span class="project-name"><a href="https://nation3.org/" class="project-link">Nation3</a></span> - An internet-native jurisdiction.
+		  </li>
+		</ul>
+	  </div>
+	</section>
+
+	<!-- Call to Action Section -->
+	<section class="cta-section">
+	  <div class="container">
+		<div class="cta-links">
+		  <a href="index.html" class="cta-link">← Back to main page</a>
+		  <a href="culture-theory.html" class="cta-link">Learn more about culture theory →</a>
+		</div>
+		
+		<div class="social-media">
+		  <h3>Connect with us</h3>
+		  <div class="social-icons">
+			<a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+			<a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+			<a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+			<a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+		  </div>
+		</div>
+		
+		<div class="newsletter">
+		  <h3>Interested? Stay in touch</h3>
+		  <p>Sign up for our newsletter to receive updates about our progress.</p>
+		  <form class="newsletter-form">
+			<input type="email" placeholder="Your email address" required>
+			<button type="submit">Subscribe</button>
+		  </form>
+		</div>
+		
+		<div class="contact">
+		  <h3>Get in touch</h3>
+		  <p>Have questions or ideas? Contact our team.</p>
+		  <a href="contact.html" class="contact-button">Contact Us</a>
+		</div>
+	</section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">About</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact</a>
+            </div>
+            
+            <div class="copyright">
+                &copy; 2025 CultureForge. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Create animated network lines and nodes
+        document.addEventListener('DOMContentLoaded', function() {
+            const networkContainer = document.getElementById('networkContainer');
+            const lineCount = 15;
+            const nodeCount = 8;
+            
+            // Create network lines
+            for (let i = 0; i < lineCount; i++) {
+                const line = document.createElement('div');
+                line.classList.add('network-line');
+                
+                // Random properties
+                const width = Math.random() * 1 + 0.5;
+                const length = Math.random() * 150 + 80;
+                const left = Math.random() * 100;
+                const top = Math.random() * 100;
+                const angle = Math.random() * 360;
+                const delay = Math.random() * 8;
+                
+                // Apply styles
+                line.style.width = `${width}px`;
+                line.style.height = `${length}px`;
+                line.style.left = `${left}%`;
+                line.style.top = `${top}%`;
+                line.style.transform = `rotate(${angle}deg)`;
+                line.style.animationDelay = `${delay}s`;
+                
+                // networkContainer.appendChild(line);
+            }
+            
+            // Create city nodes
+            for (let i = 0; i < nodeCount; i++) {
+                const node = document.createElement('div');
+                node.classList.add('city-node');
+                
+                // Random properties
+                const size = Math.random() * 20 + 10;
+                const left = Math.random() * 90 + 5;
+                const top = Math.random() * 90 + 5;
+                const delay = Math.random() * 4;
+                
+                // Apply styles
+                node.style.width = `${size}px`;
+                node.style.height = `${size}px`;
+                node.style.left = `${left}%`;
+                node.style.top = `${top}%`;
+                node.style.animationDelay = `${delay}s`;
+                
+                // networkContainer.appendChild(node);
+            }
+            
+            // Create floating particles
+            for (let i = 0; i < 30; i++) {
+                createParticle();
+            }
+            
+            // Set up image rotation for city images
+            setupImageRotation();
+            
+            // Scroll indicator behavior
+            document.getElementById('scrollIndicator').addEventListener('click', function() {
+                document.getElementById('vision').scrollIntoView({ behavior: 'smooth' });
+            });
+            
+            // Intersection Observer for animations
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            // Observe all elements with animation
+            document.querySelectorAll('[data-animation]').forEach(element => {
+                observer.observe(element);
+            });
+        });
+        
+        // Function to rotate city images every 5 seconds
+        function setupImageRotation() {
+            const images = document.querySelectorAll('.city-image');
+            let currentIndex = 0;
+            
+            setInterval(() => {
+                // Hide all images
+                images.forEach(img => img.classList.remove('active'));
+                
+                // Move to next image
+                currentIndex = (currentIndex + 1) % images.length;
+                
+                // Show current image
+                images[currentIndex].classList.add('active');
+            }, 5000);
+        }
+        
+        // Function to create floating particles
+        function createParticle() {
+            const particle = document.createElement('div');
+            particle.classList.add('floating-particle');
+            
+            // Random properties
+            const size = Math.random() * 4 + 2;
+            const left = Math.random() * 100;
+            const top = Math.random() * 100;
+            const duration = Math.random() * 80 + 40;
+            
+            // Apply styles
+            particle.style.width = `${size}px`;
+            particle.style.height = `${size}px`;
+            particle.style.left = `${left}%`;
+            particle.style.top = `${top}%`;
+            
+            // Append to body
+            document.body.appendChild(particle);
+            
+            // Animate randomly
+            animateParticle(particle, duration);
+        }
+        
+        // Function to animate particles
+        function animateParticle(particle, duration) {
+            const xMovement = Math.random() * 10 - 5;
+            const yMovement = Math.random() * 10 - 5;
+            
+            // Set animation
+            particle.animate([
+                { transform: 'translate(0, 0)', opacity: 0 },
+                { transform: `translate(${xMovement}vw, ${yMovement}vh)`, opacity: 0.5, offset: 0.5 },
+                { transform: `translate(${xMovement * 2}vw, ${yMovement * 2}vh)`, opacity: 0 }
+            ], {
+                duration: duration * 1000,
+                iterations: Infinity
+            });
+        }
+    </script>
+</body>
+</html>
