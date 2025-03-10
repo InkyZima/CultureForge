@@ -845,6 +845,158 @@
                 font-size: 2rem;
             }
         }
+
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .modal.show {
+            display: block;
+            opacity: 1;
+        }
+        
+        .modal-content {
+            background-color: var(--background-white);
+            margin: 5% auto;
+            width: 90%;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+            transform: translateY(-30px);
+            transition: transform 0.3s ease;
+            max-height: 90vh;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .modal.show .modal-content {
+            transform: translateY(0);
+        }
+        
+        .modal-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .modal-title {
+            margin: 0;
+            font-family: 'Space Grotesk', sans-serif;
+            color: var(--text-dark);
+        }
+        
+        .close-button {
+            font-size: 2rem;
+            font-weight: 300;
+            color: var(--text-dark);
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+        
+        .close-button:hover {
+            color: var(--primary);
+        }
+        
+        .modal-body {
+            padding: 1.5rem;
+            overflow-y: auto;
+        }
+        
+        .modal-footer {
+            padding: 1rem 1.5rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            text-align: right;
+        }
+        
+        .modal-close-btn {
+            background-color: var(--text-dark);
+        }
+        
+        .modal-close-btn:hover {
+            background-color: var(--primary);
+        }
+        
+        /* Additional Styles for Contact Form */
+        .contact-form {
+            margin-bottom: 2rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            font-family: 'Lato', sans-serif;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+        }
+        
+        .alternative-contact {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+        
+        .alternative-contact .social-icons {
+            margin-top: 1rem;
+        }
+        
+        /* Animation for modal */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateY(-30px); }
+            to { transform: translateY(0); }
+        }
+        
+        /* Responsive styles for the modal */
+        @media (max-width: 768px) {
+            .modal-content {
+                width: 95%;
+                margin: 10% auto;
+                max-height: 80vh;
+            }
+            
+            .modal-header {
+                padding: 1rem;
+            }
+            
+            .modal-body {
+                padding: 1rem;
+            }
+        }
     </style>
 
     <!-- MailerLite Universal -->
@@ -983,11 +1135,11 @@
             <a class="contact-button ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'oL9uUf', true)">Subscribe</a>
           </div>
 		
-        <div class="contact">
+<!--         <div class="contact">
         <h3>Get in touch</h3>
         <p>Have questions or ideas? Contact our team.</p>
         <a href="contact.html" class="contact-button">Contact Us</a>
-        </div>
+        </div> -->
 
         <div class="social-media">
         <h3>Connect with us</h3>
@@ -1008,8 +1160,8 @@
             <div class="footer-links">
                 <a href="#">About</a>
                 <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Contact</a>
+                <!-- <a href="#">Terms of Service</a> -->
+                <!-- <a href="#">Contact</a> -->
             </div>
             
             <div class="copyright">
@@ -1017,6 +1169,118 @@
             </div>
         </div>
     </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Modal Title</h2>
+                <span class="close-button">&times;</span>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <p>Modal content will be loaded here.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn modal-close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add this modal HTML right before the closing </body> tag -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">Modal Title</h2>
+                <span class="close-button">&times;</span>
+            </div>
+            <div class="modal-body" id="modal-body">
+                <p>Modal content will be loaded here.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn modal-close-btn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal content templates (hidden) -->
+    <div id="modal-templates" style="display: none;">
+        <!-- About Template -->
+        <div id="about-template">
+            <h3>About CultureForge</h3>
+            <p>CultureForge is dedicated to building the infrastructure for culture creation and management in new city-states.</p>
+            <p>Our mission is to empower communities to construct and sustain their own unique cultures at a state level, facilitating the vision of a network of self-governing city-states based on common values and mutual benefit.</p>
+            <p>We believe in a future where people can live meaningful lives, mentally healthy and empowered with true agency, in communities that reflect their values and priorities.</p>
+            <p>CultureForge is a hobby project. We do not sell any products or services.</p>
+        </div>
+        
+        <!-- Privacy Policy Template -->
+        <div id="privacy-template">
+            <h3>Privacy Policy</h3>
+            <p>Last updated: March 2025</p>
+            <p>
+                This site uses <a href="https://www.mailerlite.com" target="_blank">MailerLite</a> for handling new newsletter subscriptions. MailerLite is a third-party provider, which may process your data using industry-standard technologies to help us monitor and improve our newsletter. </br>
+                MailerLite’s privacy policy is available at <a href="https://www.mailerlite.com/legal/privacy-policy" target="_blank">https://www.mailerlite.com/legal/privacy-policy</a> </br>
+                You can unsubscribe from our newsletter by clicking on the unsubscribe link provided at the end of each newsletter at any time.
+            </p>
+        </div>
+        
+        <!-- Terms of Service Template -->
+        <div id="terms-template">
+            <h3>Terms of Service</h3>
+            <p>Last updated: March 2025</p>
+            <h4>1. Acceptance of Terms</h4>
+            <p>By accessing or using CultureForge's website, you agree to be bound by these Terms of Service.</p>
+            <h4>2. Use of Services</h4>
+            <p>You agree to use our services only for lawful purposes and in accordance with these Terms.</p>
+            <h4>3. Intellectual Property</h4>
+            <p>All content on this website is the property of CultureForge and is protected by copyright, trademark, and other intellectual property laws.</p>
+            <h4>4. Disclaimer of Warranties</h4>
+            <p>Our services are provided "as is" without warranties of any kind, either express or implied.</p>
+            <h4>5. Limitation of Liability</h4>
+            <p>CultureForge shall not be liable for any indirect, incidental, special, consequential, or punitive damages.</p>
+        </div>
+        
+        <!-- Contact Template -->
+        <div id="contact-template">
+            <h3>Contact Us</h3>
+            <p>We'd love to hear from you! Please use one of the methods below to get in touch with our team.</p>
+            
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            
+            <div class="alternative-contact">
+                <h4>Other Ways to Connect</h4>
+                <p><strong>Email:</strong> info@cultureforge.com</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script>
 
@@ -1163,6 +1427,94 @@
                 iterations: Infinity
             });
         }
+
+        // Modal functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get modal elements
+            const modal = document.getElementById('modal');
+            const modalTitle = document.getElementById('modal-title');
+            const modalBody = document.getElementById('modal-body');
+            const closeButton = document.querySelector('.close-button');
+            const closeBtn = document.querySelector('.modal-close-btn');
+            
+            // Get all footer links
+            const footerLinks = document.querySelectorAll('.footer-links a');
+            
+            // Function to open modal with specific content
+            function openModal(title, contentId) {
+                // Set modal title
+                modalTitle.textContent = title;
+                
+                // Get content from template
+                const template = document.getElementById(contentId);
+                if (template) {
+                    modalBody.innerHTML = template.innerHTML;
+                } else {
+                    modalBody.innerHTML = '<p>Content not available</p>';
+                }
+                
+                // Show modal
+                modal.classList.add('show');
+                
+                // Prevent body scrolling
+                document.body.style.overflow = 'hidden';
+                
+                // Add event listener for contact form submission if it exists
+                const contactForm = document.getElementById('contact-form');
+                if (contactForm) {
+                    contactForm.addEventListener('submit', function(e) {
+                        e.preventDefault();
+                        alert('Thank you for your message! We will get back to you soon.');
+                        // Here you would normally add code to send the form data to a server
+                    });
+                }
+            }
+            
+            // Function to close modal
+            function closeModal() {
+                modal.classList.remove('show');
+                document.body.style.overflow = 'auto';
+            }
+            
+            // Attach click event to footer links
+            footerLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    const linkText = this.textContent.toLowerCase();
+                    
+                    if (linkText.includes('about')) {
+                        openModal('About us', 'about-template');
+                    } else if (linkText.includes('privacy')) {
+                        openModal('Privacy Policy', 'privacy-template');
+                    } else if (linkText.includes('terms')) {
+                        openModal('Terms of Service', 'terms-template');
+                    } else if (linkText.includes('contact')) {
+                        openModal('Contact us', 'contact-template');
+                    }
+                });
+            });
+            
+            // Close modal when clicking the X button
+            closeButton.addEventListener('click', closeModal);
+            
+            // Close modal when clicking the Close button
+            closeBtn.addEventListener('click', closeModal);
+            
+            // Close modal when clicking outside the modal content
+            modal.addEventListener('click', function(e) {
+                if (e.target === modal) {
+                    closeModal();
+                }
+            });
+            
+            // Close modal when pressing ESC key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && modal.classList.contains('show')) {
+                    closeModal();
+                }
+            });
+        });
     </script>
 </body>
 </html>
