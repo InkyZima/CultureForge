@@ -846,6 +846,16 @@
             }
         }
     </style>
+
+    <!-- MailerLite Universal -->
+<script>
+    (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+    .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+    n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+    (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+    ml('account', '1376010');
+</script>
+<!-- End MailerLite Universal -->
 </head>
 <body>
     <!-- Hero Section -->
@@ -955,30 +965,41 @@
 		  <a href="culture-theory.html" class="cta-link">Learn more about culture theory →</a>
 		</div>
 		
-		<div class="social-media">
-		  <h3>Connect with us</h3>
-		  <div class="social-icons">
-			<a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-			<a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-			<a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
-			<a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-		  </div>
-		</div>
 		
-		<div class="newsletter">
+		
+<!-- 		<div class="newsletter">
 		  <h3>Interested? Stay in touch</h3>
 		  <p>Sign up for our newsletter to receive updates about our progress.</p>
 		  <form class="newsletter-form">
 			<input type="email" placeholder="Your email address" required>
 			<button type="submit">Subscribe</button>
 		  </form>
-		</div>
+		</div> -->
+
+        <div class="newsletter">
+            <h3>Interested?</h3>
+            <p>Sign up for our newsletter to receive updates about our progress.</p>
+            <!-- <a href="contact.html" class="contact-button">Subscribe</a> -->
+            <a class="contact-button ml-onclick-form" href="javascript:void(0)" onclick="ml('show', 'oL9uUf', true)">Subscribe</a>
+          </div>
 		
-		<div class="contact">
-		  <h3>Get in touch</h3>
-		  <p>Have questions or ideas? Contact our team.</p>
-		  <a href="contact.html" class="contact-button">Contact Us</a>
-		</div>
+        <div class="contact">
+        <h3>Get in touch</h3>
+        <p>Have questions or ideas? Contact our team.</p>
+        <a href="contact.html" class="contact-button">Contact Us</a>
+        </div>
+
+        <div class="social-media">
+        <h3>Connect with us</h3>
+        <div class="social-icons">
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+        </div>
+        </div>
+
+		
 	</section>
 
     <!-- Footer -->
@@ -998,6 +1019,13 @@
     </footer>
 
     <script>
+
+/*         (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+            .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+            n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+            (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+            ml('account', '1376010'); */
+    
         // Create animated network lines and nodes
         document.addEventListener('DOMContentLoaded', function() {
             const networkContainer = document.getElementById('networkContainer');
