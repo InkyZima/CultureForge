@@ -1,0 +1,35 @@
+# Introduction
+
+The introduction contains the prologue to my approach to culture theory, the context of culture, theoretical basics behind my culture theory and how i concluded culture being a fundamental infrastructure piece for creating new city-states.
+
+## The depths
+At age 21, after four years of single-minded dedication to meditation and understanding of Buddhist teachings, i achieved enlightenment (in the Zen-Buddhist sense). In following weeks, i experienced deep psychological and personality changes, which i realized had me become completely unfit for society and any somewhat normal life, were i to continue on my current path. I decided to step away from meditation and Buddhism, not feeling ready yet to join a monastery for life.
+//Without an inherent motivation to process sensory inputs, with perfect happiness without any interaction with the outside world, without a notion of self, how 
+This experience left me with a severe motivation problem. Returning back to a false sense of self was easy, but with innate perfect happiness from inner stillness there was no motivation to do anything at all. How could i motivate me to be productive, act/interact with the outside world, when there was nothing to gain from it, when the outside world held no meaning nor value, when any meaning of value assigned to anything (including one/a self) was objectively a lie? Being aware that some meaning or value actually isn't, ruins it's potential to be motivating.
+Thus, i concluded that any potential meaning or value would have to become a "subjective truth", i.e. the individual believing something to be meaningful or valuable must 1. be fundamentally convinced of that and 2. unable to see it objectively as not being so. How does something become a "subjective truth" then? The answer is: The individual must believe in a/their self, being unable to see themselves objectively (i.e. not in a state of enlightenment or close to it) and that thing must become embedded into their selves. Meanings and values embedded into oneself: That is ones' culture.
+
+**Side-notes**
+* On all the things i consider "culture": Culture is more of an umbrella term for me, covering culture in the common sense, religion, and ideology. Another way to put is saying that i don't really make a significant difference between culture, religion or ideology. If this seems unclear at this point in the book, i apologize; consider jumping to the definition of culture (laid down at a later point in the book).
+* On enlightenment: 
+  * I thought becoming enlightened is a point of no return. But i stand corrected: Humans are infinitely good at forgetting.
+  * Since i achieved it on my own and living on the country-side, i never had myself tested for enlightenment. My claim to enlightenment is to the best of my understanding of my experiences and insights. Koans became trivially clear, except for ones with post-enlightenment (cultivation) topics (such as rebirth). Tao Te Ching became mostly clear. I read D. T. Suzuki's Living by Zen at that time which i believe helped me make progress, though key driver was single-minded dedication to meditation (, upholding self-awareness/observation, pushing the disassociation with the notion of a self).
+
+## Computationalism
+Have you picked up a scholar book on culture and found yourself already cringing at the definition of "culture"?  "A concept that encompasses the social behavior, institutions, and norms found in human societies, as well as the knowledge, beliefs, arts, laws, customs, capabilities, attitudes, and habits of the individuals in these groups." [quote:Wipikedia]. So basically everything, and therefore nothing in particular. 
+I was on the lookout for a *constructive* definition of culture (i.e. one which is (theoretically) useful for constructing an instance of this definition). This all-and-nothing "common definition" was at best *descriptive* (if of any practical value at all). I found my way to a constructive definition of culture through Stephen Wolfram's computational (meta)modeling, which i shall describe in brief from my perspective here:
+Given a simple object, and a simple set of rules: Apply those rules to that object, and then applying the same rules to the outcome of the first application, and then continuing to do so (i.e. iteratively). This can lead to very complex behavior. The classic example is Stephen Wolfram's Rule 30 [TODO]. How complex? Possibly (hypothesizing) as complex as all natural things in the physical world. As a computationalist, i model anything which can't we modelled practically well *in a functional way* (i.e. having the property, that the state at some arbitrary future point can be potentially calculated from the state at an earlier point) in a computational way, i.e. with the assumption that the state at some arbitrary future point can only be calculated from the state of an earlier point by computing the application of a rule(set) to that earlier point, and then on its result, iteratively, until reaching the future point. To use a Stephen Wolfram term, things that can be modelled *functionally* are things with computational reducibility (whereas everything else has computational *ir*reducibility).
+After studying the development of human cultures throughout human history (to be summarized and discussed in a future chapter), it quickly became clear to me that culture is of computational nature, i.e. culture develops step-wise, each step building on the previous one through the application of a set of rules. This step-wise process is then finally a *constructive* definition of culture, practically much more useful when aiming at creating new cultures. Furthermore, Stephen Wolfram's computationalist theory can be applies. Thus, it is of benefit to study his theory for gaining insights into culture creation. Unfortunately, in absolute terms, computationalist theory is not nearly as useful than "functional" theory / classical science, due to the fundamental complexity of the nature of things with computational irreducibility.
+
+**Side-notes**
+* Let not all credit go to Stephen Wolfram, but also to Jonathan Gorard and team for contributions and driving the Wolfram (fundamental) Physics Project.
+* Those philosophically inclined my find dwelling on the conclusions from computationalist modeling of the world and the Wolfram (fundamental) Physics Project interesting, such as determinism and no free will. It has been generally noted by philosophers that those conclusions align with Eastern philosophical world views. 
+
+## The role of culture for revolution
+(why studying, creating and managing culture is important for creating a new world)
+"*To build a new world, you need both the Architect and the Oracle.*"
+
+## Hierarchy of forces
+.. my second avenue of interest into culture (i.e. it being the third strongest force).
+
+**Side-notes**
+.. the link down from env to culture is cultural logic.
