@@ -2,7 +2,7 @@
 
 The introduction contains the prologue to my approach to culture theory, the context of culture, theoretical basics behind my culture theory and how i concluded culture being a fundamental infrastructure piece for creating new city-states.
 
-## The depths
+## The Depths
 At age 21, after four years of single-minded dedication to meditation and understanding of Buddhist teachings, i achieved enlightenment (in the Zen-Buddhist sense). In following weeks, i experienced deep psychological and personality changes, which i realized had me become completely unfit for society and any somewhat normal life, were i to continue on my current path. I decided to step away from meditation and Buddhism, not feeling ready yet to join a monastery for life.
 //Without an inherent motivation to process sensory inputs, with perfect happiness without any interaction with the outside world, without a notion of self, how 
 This experience left me with a severe motivation problem. Returning back to a false sense of self was easy, but with innate perfect happiness from inner stillness there was no motivation to do anything at all. How could i motivate me to be productive, act/interact with the outside world, when there was nothing to gain from it, when the outside world held no meaning nor value, when any meaning of value assigned to anything (including one/a self) was objectively a lie? Being aware that some meaning or value actually isn't, ruins it's potential to be motivating.
@@ -25,11 +25,50 @@ After studying the development of human cultures throughout human history (to be
 * Those philosophically inclined my find dwelling on the conclusions from computationalist modeling of the world and the Wolfram (fundamental) Physics Project interesting, such as determinism and no free will. It has been generally noted by philosophers that those conclusions align with Eastern philosophical world views. 
 
 ## The role of culture for revolution
-(why studying, creating and managing culture is important for creating a new world)
-"*To build a new world, you need both the Architect and the Oracle.*"
-
-## Hierarchy of forces
-.. my second avenue of interest into culture (i.e. it being the third strongest force).
+The crypto hype had the crypto communities dream about new economies, ecosystems and new sovereignty. Let's imagine it would have all panned out; millions of people each would use their own cryptocurrency. It would have become their dominant payment currency and used for everything from consumer staples over discretionary goods, entertainment, fees, etc. Let's imagine them gaining economic power and international recognition similar to a nation state. Those communities may come together, build and live together in the physical world. Wouldn't that be a truly new world we would live in? A new paradigm?
+But what kind of world would those communities build? My claim is: They wouldn't build a different world at all! Their world would be one which would end up looking pretty much exactly the same as the one they wished and managed to escape. Why? Because they hadn't changed their culture: Fundamentally they would be of the same culture as the one they originated from, with the same values, opinions, habits, sources of happiness, definitions of success, etc. . And so the new world would be much of the old world, except with different people (yet the same *kind* of people, culturally) in power.
+Furthermore, if such revolutionary communities succeeded and where to acquire their own land to build on, what would be their beginnings? Humble. They would likely have to trade nearly their all, in exchange for this sovereignty. Would their masses be willing to do this trade, if what they collectively culturally desire is: everything they have right now *plus* sovereignty and ideally be rich on top of that? Of course not. Thus they'd have to leave behind their old world *culture* first (and become humble pioneers drawing happiness from being exactly that; their strong values of building a new world). And i'm not talking about "a few individuals" per community, but almost all of them / the community in its entirety. Hereby the need to create and establish a new culture in advance.
+I purport that what this tech/fintech revolution would have needed is a cultural revolution to go with it. Top talent hitting the charts singing, writing and dancing about the new world, the new way, the new values. Howl and Woodstock. Praise Helix. With a nod to the Matrix movies:
+"*To create a new world, you need both the Architect and the Oracle.*"
 
 **Side-notes**
-.. the link down from env to culture is cultural logic.
+* The crypto hype did had its significant efforts at culture- and community-building. However, this without deep theoretic knowledge nor a framework for culture. Hence this book / the CultureForge project, so that we have the culture building tools for when the next opportunity arises. The world will move forward one crisis at a time; Each crisis will have people strongly desire and look for alternatives. Therefore those are opportunities for large-scale change in the world.
+* Since most people can't look at their own culture from the outside / objectively (cf. chapter The Depths), they are not aware how the culture embedded in them limits them in imagination of alternative value systems and their ability to change. This again highlights the need for exceptional artists / creatives / mavericks for building a truly novel world.
+
+## Hierarchy of forces
+In the beginning, humans were thrown into the physical world. They had their human nature - fundamental needs, etc. . They had to deal with their environment - cold, dangers, but also opportunities to make use of resources. From this, eventually they developed wisdom and behavior patterns; "this is how you deal with that". "This is good, this is bad". Their behavior patterns / habits shaped them, and with this in term they shaped their world. Those behavior patterns became social norms of those human living communities, they learned, passed on and enforced them, and so culture was born. (As alluded in the side notes of chapter The Depths, i use *culture* as an umbrella-term for religion, ideology and culture in the common sense.)
+Thus the hierarchy of forces (descending):
+1. Nature / human nature
+2. Environment
+3. Culture
+*Cultural logic* for a given culture is the link down from Environment to Culture; a logical explanation of this system of behavior through objective inspection of the Environment from which the this culture emerged.
+
+Some conclusions (more will be discussed in the main part of this book):
+* For each environment, there are different ways how to deal with that environment and therefore multiple possible cultures. Therefore different environments lead to different cultures, but also the same environment may lead to different cultures.
+* Environment comes first, Culture comes second, i.e. culture is fundamentally reactive, making it hard to create a culture "in advance" / for a future environment.
+* Change in environment impacts culture. Therefore, if one has the power to affect the environment (for example top management changing an organization's structure and processes), one can utilize that to cause cultural change.
+
+### A brief unpacking of the forces
+**Regarding Nature / human nature:**
+With human nature i roughly mean the *unconditional*; forces / motivations which exist prior to any outside world and/or societal/cultural influence. Imagine a pre-technological age human, having just eaten and being *satiated*, going out into the meadow and lying down on their back on the grass, basking in the warm sunlight. Which forces may affect them, causing them to stand up again and move/act in any way? Are they fully content in the moment? I categorize relevant forces/motivations in two categories and arrange them in a 2x2 matrix: 
+| Motivation Type | Negative | Positive |
+|---|---|---|
+| **Internal** | Hunger | ? |
+| **External** | Cold | Smell of wild garlic |
+
+In my model there is no general internal positive motivation. Internal motivations only lead to *satiation* (and not an infinite drive to improve). Potential candidates for natural/unconditional internal positive motivations would be: love, curiosity. Though those aren't substantially present in the general public unconditionally. Internal positive motivations such as desire for growth/improvement are learned behavior and not inherent to human nature.
+
+**Regarding Environment:**
+Environment is any persistent external force affecting a human. Environment may be tangible (such as physical environment) or non-tangible (such as social, psychological, cultural environment). It is important to note that any individual typically does not perceive their environment in its totally, but only a fraction of it, due to their subjective perception of it ("subjective reality") from being *within* it. This is illustrated by the following example: A company top manager may have a very different view of a certain employee's working environment than that employee themselves, because that employees sits *within* their environment and has only a limited view/experience of their overall environment, whereas the top level manager has a more holistic "from above" view in the overall environment (similarly to the view-point of looking at a house from the top with the roof removed, rather than view-point of standing in a room *within* the house).
+
+### The great opportunity of Culture becoming Environment
+When culture permeates every aspect of one's (daily) life, it itself becomes an environment ("cultural environment"). Therein lies the great opportunity for great change through culture: If one is not in the position to change an environment directly (such as being the CEO of a company, or being the dictator of a state), one can still change the environment by growing out culture to the point that it permeates and covers everything. Consequently, through strong cultural behavior, societies can change their environment altogether, bending their pre-existing environment *itself* to fit their culture. Thusly, culture can become the second-strongest force in the hierarchy of forces (second only to (human) nature).
+This certainly is an uphill fight though, but doable, if culture is well utilized as a source of motivation/energy.
+
+**Side-notes**
+* From Environment being the second strongest force, follows, that, if one wishes to better oneself above the average of one's environment, one should disengage with that environment and/or seek to immerse oneself in a better one. A negative environment will always substantially pull one down, making it generally not viable to pull above and beyond it while still constantly engaging with it. "You're the average of the five people spend the most time with." - Jim Rohn. "Don't dabble with fools (if you wish to get enlightened)." -  Dhammapada 5:61
+Viewed as an opportunity: The best way to learn a new culture is as with learning a new language: Become part of a community where people already live it.
+* World changes, which change the way humans live and organize themselves forever, are called *Megapolitical changes*. Examples: The end of the ice age (opening up the possibility of irrigation), civilized societies (with written commandments), the invention of the printing press, computers, internet, AI. Megapolitical changes are key environment changes resulting in large-scale cultural changes in societies.
+
+
+# Fundamentals
