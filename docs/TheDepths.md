@@ -9,3 +9,8 @@ The individual believing something to be meaningful or valuable must 1. be *fund
 * On enlightenment: 
   * I thought becoming enlightened is a point of no return. But I stand corrected: Humans are infinitely good at forgetting.
   * Since I achieved it on my own and living on the countryside, I never had myself tested for enlightenment. My claim to enlightenment is to the best of my understanding of my experiences and insights. Koans became trivially clear, except for ones with post-enlightenment (-cultivation) topics (such as rebirth). Tao Te Ching became mostly clear. I read D. T. Suzuki's Living by Zen at that time, which I believe helped me make progress, though the key driver was single-minded dedication to meditation (upholding self-awareness/observation, pushing the disassociation with the notion of a self).
+
+---
+
+
+[Next Chapter: Computational modeling theory](ComputationalModeling.md)

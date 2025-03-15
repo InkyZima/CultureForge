@@ -16,10 +16,12 @@ Some conclusions (more will be discussed in the main part of this book):
 ### A brief unpacking of the forces
 **Regarding nature / human nature:**  
 With human nature, I roughly mean the *unconditional* forces or motivations that exist prior to any outside world and/or societal/cultural influence. Imagine a pre-technological age human, having just eaten and being *satiated*, going out into the meadow and lying down on their back on the grass, basking in the warm sunlight. Which forces may affect them, causing them to stand up again and move/act in any way? Are they fully content in the moment? I categorize relevant forces/motivations in two categories and arrange them in a 2x2 matrix:
-| Motivation Type | Negative | Positive |
-|---|---|---|
-| **Internal** | Hunger | ? |
-| **External** | Cold | Smell of wild garlic |
+* Internal:
+  * Negative: Hunger
+  * Positive: ?
+* External:
+  * Negative: Cold
+  * Positive: Smell of wild garlic
 
 In my model, there is no general internal positive motivation. Internal motivations only lead to *satiation* (and not an infinite drive to improve). Potential candidates for natural/unconditional internal positive motivations would be love and curiosity. However, those aren't substantially present in the general public unconditionally. Internal positive motivations such as the desire for growth/improvement are learned behavior and not inherent to human nature.
 

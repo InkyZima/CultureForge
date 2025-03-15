@@ -8,3 +8,7 @@ After studying the development of human cultures throughout history (to be summa
 **Side-notes**
 * Let not all credit go to Stephen Wolfram, but also to Jonathan Gorard and team for contributions and driving the Wolfram (fundamental) Physics Project. 
 * Those philosophically inclined may find dwelling on the conclusions from computational modeling of the world and the Wolfram (fundamental) Physics Project interesting, such as determinism and no free will. It has been generally noted by philosophers that those conclusions align with Eastern philosophical world views.
+---
+
+
+[Next Chapter: The role of culture for revolution](TheroleOfCulture.md)
