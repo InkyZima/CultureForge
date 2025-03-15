@@ -38,3 +38,7 @@ This certainly is an uphill fight, though, but doable if culture is well utilize
 Since people generally can't see beyond their own culture, they typically don't realize just how much they are being pulled down and/or limited by the culture(s) they spent their entire lives in.  
 Viewed as an opportunity: The best way to learn a new culture is as with learning a new language: Become part of a community where people already live it.
 * World changes, which change the way humans live and organize themselves forever, are called *Megapolitical changes*. Examples: The end of the ice age (opening up the possibility of irrigation), civilized societies (with written commandments), the invention of the printing press, computers, internet, AI. Megapolitical changes are key environment changes resulting in large-scale cultural changes in societies.
+---
+
+
+[Return to index](/)
