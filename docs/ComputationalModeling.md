@@ -1,3 +1,5 @@
+`First draft. Send feedback to feedback@cultureforge.net`
+
 ## Computational modeling theory
 Have you picked up a scholarly book on culture and found yourself already cringing at the definition of "culture"?
 "*A concept that encompasses the social behavior, institutions, and norms found in human societies, as well as the knowledge, beliefs, arts, laws, customs, capabilities, attitudes, and habits of the individuals in these groups.*" ([Wikipedia: Culture](https://en.wikipedia.org/wiki/Culture)). So basically everything, and therefore nothing in particular.  

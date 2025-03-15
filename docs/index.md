@@ -2,10 +2,11 @@
 title: The CultureForge Book
 ---
 
+`First draft. Send feedback to feedback@cultureforge.net`
 
 # Introduction
 
-The introduction contains the prologue to my approach to culture theory, the context of culture, theoretical basics behind my culture theory and how i concluded culture being a fundamental infrastructure piece for creating new city-states (cf. [vision.cultureforge.net](https://vision.cultureforge.net/)).
+The introduction contains the prologue to my approach to culture theory, the context of culture, theoretical basics behind my culture theory and how I concluded culture being a fundamental infrastructure piece for creating new city-states (cf. [vision.cultureforge.net](https://vision.cultureforge.net/)).
 
 Chapters:
 * [The Depths](TheDepths.md)

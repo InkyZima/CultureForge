@@ -1,3 +1,5 @@
+`First draft. Send feedback to feedback@cultureforge.net`
+
 ## Hierarchy of forces
 In the beginning, humans were thrown into the physical world. They had their human nature - fundamental needs, etc. They had to deal with their environment - cold, dangers, but also opportunities to make use of resources. From this, eventually they developed wisdom and behavior patterns; "this is how you deal with that." "This is good, this is bad." Their behavior patterns / habits shaped them, and with this in turn they shaped their world. Those behavior patterns became social norms of those communities of humans living together; they learned, passed on, and enforced them, and so culture was born. (As alluded to in the side notes of chapter The Depths, I use *culture* as an umbrella term for religion, ideology, and culture in the common sense.)
 
