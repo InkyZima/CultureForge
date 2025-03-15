@@ -8,6 +8,7 @@ I purport that what this tech/fintech revolution would have needed is a cultural
 **Side-notes**
 * The crypto hype did have significant efforts at culture- and community-building. However, this happened without deep theoretical knowledge or a framework for culture. Hence this book / the CultureForge project, so that we have the culture-building tools for when the next opportunity arises. The world will move forward one crisis at a time; each crisis will have people strongly desire and look for alternatives. Therefore, those are opportunities for large-scale change in the world.
 * Since most people can't look at their own culture from the outside / objectively (cf. chapter The Depths), they are not aware how the culture embedded in them limits them in their imagination of alternative value systems and their ability to change. This again highlights the need for exceptional artists / creatives / mavericks for building a truly novel world.
+
 ---
 
 
